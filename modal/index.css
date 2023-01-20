@@ -1,0 +1,149 @@
+/* .box {
+	width: 60px;
+	background-color: blue;
+	height: 60px;
+	animation: scale 0.9s ease-out infinite;
+}
+
+@keyframes scale {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+} */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* body {
+	font-family: sans-serif;
+	color: #333;
+	line-height: 1.5;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background: linear-gradient(to top left, #28b487, #7dd56f);
+} */
+
+.hidden {
+	display: none;
+}
+.btn-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.modal {
+	width: 90%;
+	max-width: 40rem;
+	position: absolute;
+	background-color: #ccc;
+
+	animation: scrollTop 300ms ease-in-out forwards;
+	padding: 1rem;
+	z-index: 10;
+	margin-top: 80px;
+}
+.overlays {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+
+@keyframes scrollTop {
+	from {
+		opacity: 0;
+		transform: translateY(-5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.box {
+	display: flex;
+}
+/* 
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+
+	flex 1 => 	flex-grow: 1;
+				flex-shrink: 1;
+				flex-basis:0;
+*/
+
+.one {
+	flex: 1 1 200px;
+	background-color: red;
+}
+
+.two {
+	flex: 0 1 200px;
+
+	background-color: blue;
+}
+
+.three {
+	flex: 0 0 200px;
+
+	background-color: green;
+}
+
+.container {
+	height: 600px;
+	background-color: #ccc;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	background-color: #f5ffc6;
+}
+.mid {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.newgame {
+	flex: 1;
+}
+.bottom {
+	flex: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+.player--winner {
+	background-color: #2f2f2f;
+}
+.player--active {
+	background-color: #ccc;
+}

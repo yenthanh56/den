@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+}
+.menuleft {
+	flex: 1;
+}
+.search {
+}
+.cats {
+}
+
+.price {
+}
+.pricerange {
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+}
+
+.products {
+	padding: 0 10px;
+	display: grid;
+	flex: 4;
+	gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	/* display: flex;
+	flex-wrap: wrap;
+	gap: 26px; 
+	flex: 4; */
+}
+.product {
+	display: flex;
+	flex-direction: column;
+}
+.product img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

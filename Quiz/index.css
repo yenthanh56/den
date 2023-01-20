@@ -1,0 +1,75 @@
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rebeccapurple;
+}
+
+.container {
+	width: 800px;
+	height: 500px;
+	background-color: #fff;
+	position: relative;
+	text-align: center;
+}
+.content {
+	padding: 50px;
+}
+.game {
+	/* display: none; */
+}
+.answers {
+	font-size: 24px;
+	margin-bottom: 24px;
+	color: #333;
+}
+
+.submit {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	border: 0;
+	background-color: blue;
+	color: #fff;
+	padding: 10px;
+}
+
+.result {
+	display: none;
+
+	background: #fff;
+
+	text-align: center;
+}
+
+.iscorrectly {
+	color: green;
+	font-size: 25px;
+	font-weight: bold;
+}
+.wrong {
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+}
+.score {
+	color: blueviolet;
+	font-size: 25px;
+	font-weight: bold;
+}
+.done {
+	margin-top: 75px;
+}
+.again {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	border: 0;
+	padding: 10px;
+	background-color: blue;
+
+	color: #fff;
+}
